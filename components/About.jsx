@@ -8,7 +8,6 @@ const About = () => {
                 <h2 className='py-4 text-gray-500  hover:scale-105 ease-out duration-200'>
                     About
                 </h2>
-                    
             </p>
             <p>
                 Who I Am
