@@ -23,13 +23,6 @@ export const Main = () => {
                     If you need, feel free to reach me out :)
  
                 </p>
-                <p>
-                    and I love programming. I have a degree in Computer Science taken at university of Minho.
-                    I'm currently working at Accenture as a software developer focused in the backend development, but
-                    sometimes I help the team in the frontEnd. 
-                    
-                </p>
-
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200'>
                         <FaLinkedin />
