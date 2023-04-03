@@ -5,7 +5,7 @@ import {BsPersonVcard} from 'react-icons/bs'
 export const Main = () => {
 
   return (
-    <div className='w-full h-screen text-center'>
+    <div id='Main' className='w-full h-screen text-center'>
         <div className='max-w-[1024px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
                 <p className='uppercase text-md tracking-widest text-gray-600 hover:scale-105 ease-in duration-200'>
@@ -24,11 +24,11 @@ export const Main = () => {
  
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                    <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200'>
-                        <FaLinkedin />
+                    <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200' >
+                        <FaLinkedin onClick={()=>open('https://www.linkedin.com/in/jo%C3%A3o-nogueira-fafe/')} />
                     </div>
                     <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200'>
-                        <FaGithubSquare />
+                        <FaGithubSquare onClick={()=>open('https://github.com/pestana1213')} />
                     </div>
                     <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200'>
                         <FaMailBulk />

@@ -21,17 +21,17 @@ const NavBar = () =>{
                             Home
                         </li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#About'>
                         <li className='ml-10 text-sm uppercase hover:scale-105'>
                             About
                         </li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/' onClick={()=>open('https://www.google.com/')}>
                         <li className='ml-10 text-sm uppercase hover:scale-105'>
                             Projects
                         </li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#Skills'>
                         <li className='ml-10 text-sm uppercase hover:scale-105'>
                             Skills
                         </li>
@@ -60,32 +60,32 @@ const NavBar = () =>{
                             </div>
                             <div className='py-4 flex flex-col'>
                                 <ul>
-                                    <Link href='/'>
+                                    <Link href='/' onClick={handleNav}>
                                         <li className='py-4 text-sm'>
                                             Home
                                         </li>
                                     </Link>
-                                    <Link href='/'>
+                                    <Link href='/' onClick={handleNav}>
                                         <li className='py-4 text-sm'>
                                             Home
                                         </li>
                                     </Link>
-                                    <Link href='/'>
+                                    <Link href='/#About' onClick={handleNav}>
                                         <li className='py-4 text-sm'>
                                             About
                                         </li>
                                     </Link>
-                                    <Link href='/'>
+                                    <Link href='/#Skills' onClick={handleNav}>
                                         <li className='py-4 text-sm'>
                                             Skills
                                         </li>
                                     </Link>
-                                    <Link href='/'>
+                                    <Link href='/' onClick={handleNav}>
                                         <li className='py-4 text-sm'>
                                             Projects
                                         </li>
                                     </Link>
-                                    <Link href='/'>
+                                    <Link href='/' onClick={handleNav}>
                                         <li className='py-4 text-sm'>
                                             Contact
                                         </li>
