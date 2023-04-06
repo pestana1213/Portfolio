@@ -24,19 +24,15 @@ export const Main = () => {
  
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                    <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200' >
-                        <FaLinkedin onClick={()=>open('https://www.linkedin.com/in/jo%C3%A3o-nogueira-fafe/')} />
+                    <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200' onClick={()=>open('https://www.linkedin.com/in/jo%C3%A3o-nogueira-fafe/')} >
+                        <FaLinkedin  />
                     </div>
-                    <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200'>
-                        <FaGithubSquare onClick={()=>open('https://github.com/pestana1213')} />
+                    <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200' onClick={()=>open('https://github.com/pestana1213')}>
+                        <FaGithubSquare  />
                     </div>
                     <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200'>
                         <FaMailBulk />
                     </div>
-                    <div className='rounded-full shadow-sm shadow-gray-400 p-6 cursor-pointer hover:scale-125 ease-in duration-200'>
-                        <BsPersonVcard />
-                    </div>
-
                 </div>
             </div>
         </div>

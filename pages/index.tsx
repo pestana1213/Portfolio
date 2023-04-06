@@ -3,8 +3,11 @@ import NavBar from '../components/NavBar'
 import Main from '../components/Main'
 import About from '../components/About'
 import Skills from '../components/Skills'
+import React, {useState} from "react";
 
-export default function Home() {
+export default function Home() {  
+  const [nav, setNav] = useState(false); 
+
   return (
     <>
       <Head>

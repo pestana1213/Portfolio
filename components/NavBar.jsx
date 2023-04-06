@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Link from "next/link";
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import {FaLinkedin, FaMailBulk,FaGithubSquare } from 'react-icons/fa'
-import {BsPersonVcard} from 'react-icons/bs'
+
 const NavBar = () =>{
 
     const [nav, setNav] = useState(false); 
@@ -26,7 +26,7 @@ const NavBar = () =>{
                             About
                         </li>
                         </Link>
-                        <Link href='/' onClick={()=>open('https://www.google.com/')}>
+                        <Link href='/' onClick={()=>open('https://github.com/pestana1213')}>
                         <li className='ml-10 text-sm uppercase hover:scale-105'>
                             Projects
                         </li>
@@ -58,34 +58,34 @@ const NavBar = () =>{
                                     João Nogueira
                                 </p>
                             </div>
-                            <div className='py-4 flex flex-col'>
+                            <div className='py-4 flex flex-col' onClick={handleNav}>
                                 <ul>
-                                    <Link href='/' onClick={handleNav}>
+                                    <Link href='/' >
                                         <li className='py-4 text-sm'>
                                             Home
                                         </li>
                                     </Link>
-                                    <Link href='/' onClick={handleNav}>
+                                    <Link href='/' >
                                         <li className='py-4 text-sm'>
                                             Home
                                         </li>
                                     </Link>
-                                    <Link href='/#About' onClick={handleNav}>
+                                    <Link href='/#About' >
                                         <li className='py-4 text-sm'>
                                             About
                                         </li>
                                     </Link>
-                                    <Link href='/#Skills' onClick={handleNav}>
+                                    <Link href='/#Skills' >
                                         <li className='py-4 text-sm'>
                                             Skills
                                         </li>
                                     </Link>
-                                    <Link href='/' onClick={handleNav}>
+                                    <Link href='https://github.com/pestana1213' >
                                         <li className='py-4 text-sm'>
                                             Projects
                                         </li>
                                     </Link>
-                                    <Link href='/' onClick={handleNav}>
+                                    <Link href='/' >
                                         <li className='py-4 text-sm'>
                                             Contact
                                         </li>
@@ -96,17 +96,14 @@ const NavBar = () =>{
                                         Let's connect
                                     </p>
                                     <div className='flex items-center justify-between my-4 w-full sm:w[80%]'>
-                                    <div className='rounded-full shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
+                                    <div className='rounded-full shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200' onClick={()=>open('https://www.linkedin.com/in/jo%C3%A3o-nogueira-fafe/')}>
                                         <FaLinkedin />
                                     </div>
-                                    <div className='rounded-full shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
+                                    <div className='rounded-full shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200' onClick={()=>open('https://github.com/pestana1213')}>
                                         <FaGithubSquare />
                                     </div>
                                     <div className='rounded-full shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
                                         <FaMailBulk />
-                                    </div>
-                                    <div className='rounded-full shadow-sm shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
-                                        <BsPersonVcard />
                                     </div>
                                 </div>  
                             </div>
